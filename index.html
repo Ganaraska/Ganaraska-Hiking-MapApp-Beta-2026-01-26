@@ -424,7 +424,7 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
                 L.imageOverlay(LegendMapApp, imageBounds).addTo(map);
 
 
-                
+
     // HAZARD SYMBOLS
 
     var hazardWilderness1icon = L.icon({iconUrl: 'hazard-sign-on-transparent-background.png', iconSize: [30, 30]});
@@ -632,7 +632,7 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
     // Parking Wasaga Beach
 
     var parkingWasagaBeach1icon = L.icon({iconUrl: 'Parking.png', iconSize: [25, 25]});
-         L.marker([44.525273, -80.017979],{icon:parkingWasagaBeach1icon}).addTo(map).bindPopup("Plenty of seasonal for-a-fee <b>municipal parking</b> and often monitoried by law enforcement."); // The concentration of cannabis stores is unparalleled. No wonder it's often referred to as Weedsaga Beach."); 
+         L.marker([44.525273, -80.017979],{icon:parkingWasagaBeach1icon}).addTo(map).bindPopup("Plenty of seasonal for-a-fee <b>municipal parking</b> and often monitoried by law enforcement."); //The concentration of cannabis stores is unparalleled. No wonder it's often referred to as Weedsaga Beach."); 
 
 
     
@@ -7230,6 +7230,128 @@ var Tustincoords = [
     polygon.bindPopup("Simcoe County Forest - <b>Midhurst Tract</b><p>");
 
 
+    var Museumcoords = [
+        [44.4323509,-79.7585188],   // Western most tip of triangle
+        [44.4336635,-79.7576015],
+        [44.4357073,-79.7565525],
+        [44.436887,-79.756109],
+        [44.438905,-79.755731],
+        [44.4405175,-79.7555232],
+        [44.4404562,-79.7551767],
+        [44.4421345,-79.7549437],
+        [44.4442341,-79.7501832],
+        [44.4439416,-79.7501694],
+        [44.4439551,-79.7496541],
+        [44.4445787,-79.7497077],
+        [44.4446247,-79.7486565],
+        [44.441954,-79.746352],
+        [44.4429509,-79.7441704],
+        [44.4447893,-79.7457565],
+        [44.4447727,-79.7445653],
+        [44.4447383,-79.7431831],
+        [44.4446460,-79.7423104],
+        [44.4437295,-79.7387180],
+        [44.442289, -79.737466],
+        [44.44257346,-79.73682812], // North corner of narrow bit
+        [44.44245795,-79.73672860], // South corner of narrow bit
+        [44.4391998,-79.7439941],
+        [44.4356843,-79.7408925],
+        [44.4334466,-79.7461404],
+        [44.4340247,-79.7466364],
+        [44.4336113,-79.7476116],
+        [44.4336066,-79.7476218],
+        [44.4330213,-79.7471226],
+        [44.4325145,-79.7483206],
+        [44.435430,-79.750860],
+
+    ];
+
+    var polygon = L.polygon(Museumcoords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.4     // Fill transparency
+    }).addTo(map);
+
+    polygon.bindPopup("Simcoe County Forest - <b>Museum Tract</b><p>");
+
+
+        var Charcoalcoords = [
+            [44.4114797,-79.8138589],   // Most westerly vertex
+            [44.4172387,-79.8110012],
+            [44.4182659,-79.8088609],
+            [44.4150358,-79.8058559],
+            [44.4123916,-79.8068658],
+            [44.4107276,-79.8106602],
+            [44.4113400,-79.8114901],
+            [44.4106284,-79.8131023],
+
+        ];
+
+        var polygon = L.polygon(Charcoalcoords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.4     // Fill transparency
+    }).addTo(map);
+
+    polygon.bindPopup("Simcoe County Forest - <b>Charcoal Tract</b><p>");
+
+
+    var Huroniacoords = [
+            [44.3897496,-79.8133573],   // SW corner
+            [44.3898410,-79.8133889],
+            [44.3977221,-79.8104458],
+            [44.3988631,-79.8078526],
+            [44.3981396,-79.8087847],
+            [44.3976676,-79.8086690],
+            [44.3973474,-79.8079436],
+            [44.3973053,-79.8073604],
+            [44.3967452,-79.8074094],
+            [44.3973244,-79.8038548],
+            [44.3973047,-79.8017244],
+            [44.3963293,-79.8008608],
+            [44.3958695,-79.8019981],
+            [44.3952205,-79.8014154],
+
+    ];
+
+        var polygon = L.polygon(Huroniacoords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.4     // Fill transparency
+    }).addTo(map);
+
+polygon.bindPopup("Simcoe County Forest - <b>Huronia Tract</b><p>");
+
+
+    var Millercoords = [
+            [44.372162,-79.839923],
+            [44.3786990,-79.8254015],
+            [44.3782926,-79.8250288],
+            [44.3727875,-79.8244273],
+            [44.3676447,-79.8360390],
+
+    ];
+
+
+var polygon = L.polygon(Millercoords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.4     // Fill transparency
+    }).addTo(map);
+
+polygon.bindPopup("Simcoe County Forest - <b>Miller Tract</b><p>");
+
+
+// MAD RIVER Simcoe Forest Tracts
+
+
+
+
+
 
 
 
@@ -8055,7 +8177,7 @@ var OroMedonteDist3 = L.circle([44.661467, -79.728564], {
     weight: 10,
     radius: 15,
 }).addTo(map);
-OroMedonteDist3.bindPopup("<b>KM 6.5</b>").addTo(map);
+OroMedonteDist3.bindPopup("<b>KM 14.0</b>").addTo(map);
 
 
 
@@ -8453,4 +8575,3 @@ var circledotTinyStart = L.circle([44.7499986, -79.9602998], {
 
 </script>
 </html>
-
