@@ -18,6 +18,25 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
 
+
+
+
+     <!--Adding a Measure Tool, https://github.com/gokertanrisever/leaflet-ruler-->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/gokertanrisever/leaflet-ruler@master/src/leaflet-ruler.css"
+    integrity="sha384-P9DABSdtEY/XDbEInD3q+PlL+BjqPCXGcF8EkhtKSfSTr/dS5PBKa9+/PMkW2xsY"
+    crossorigin="anonymous"
+/>
+<script
+    src="https://cdn.jsdelivr.net/gh/gokertanrisever/leaflet-ruler@master/src/leaflet-ruler.js"
+    integrity="sha384-8SqKZR7V8uOetpjjbcNJHvwuHpb074WS0UXjCLhzfJUqYn3B/uWx1WVv5mwRp1mV"
+    crossorigin="anonymous"
+></script>
+
+<!--See below for Measure Tool Script-->
+
+
      <style>
             /* body {
             margin: 0;
@@ -104,6 +123,7 @@ updateWhenIdle: false // Update the scale bar on move
 
 
 
+
 // USING LEAFLET "YOU ARE WITHIN...METRES OF THIS POINT" & NAVIGATOR FOR A MOVING GEOLOCATION MARKER.
 // HOWEVER, YOU END UP WITH TWO MARKERS AND TWO CIRCLES. NOT SURE HOW TO REMOVE ONE OF EACH. HMMM... 
 // YOU ARE WITHIN...
@@ -176,11 +196,15 @@ var popup = L.popup();
 function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
-        .setContent("<b>You clicked the map at:</b><br> " + e.latlng.toString())
+        //.setContent("<b>You clicked the map at:</b><br> " + e.latlng.toString())  // Original code
+        .setContent(e.latlng.toString())
         .openOn(map);
 }
 
 map.on('click', onMapClick);
+
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -252,15 +276,14 @@ map.on('click', onMapClick);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Leaflet Measure (A work in progess...):
+//LEAFLET MEASURE TOOL (A work in progess...):
 
-//L.control.measure({
-        //primaryLengthUnit: "Kilometres",
-        //secondaryLengthUnit: "Metres",
-        
-//}).addTo(map);
+L.control.ruler().addTo(map);
+//map.off('click'); // Removes all click handlers 
 
-//         //              //                  //                 //                //
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // GHTA TRAIL NETWORK:
@@ -276,7 +299,9 @@ map.on('click', onMapClick);
 //     Note the new circle variable like 'circleOrilliaStart'
 //     and NOT just circle which gets confusing with the geocoding circle variable above).
 
-   
+
+
+
 
 
 
@@ -466,6 +491,18 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
         L.marker([44.729669, -79.802372],{icon:hazardMidland1icon}).addTo(map).bindPopup("DANGEROUS X-ING OVER HWY 12 <br>(a.k.a. Isobel's Crossing .)");  
 
    
+
+    var hazardMadRiver1icon = L.icon({iconUrl: 'hazard-sign-on-transparent-background.png', iconSize: [30, 30]});
+        L.marker([44.321139, -79.869021],{icon:hazardMadRiver1icon}).addTo(map).bindPopup("Be cautions crossing the bridge over <b>Nottawasaga River</b>.");
+
+    var hazardMadRiver2icon = L.icon({iconUrl: 'hazard-sign-on-transparent-background.png', iconSize: [30, 30]});
+        L.marker([44.319356, -79.881458],{icon:hazardMadRiver2icon}).addTo(map).bindPopup("Be cautions crossing the bridge over <b>Pine River</b>.");
+
+    var hazardMadRiver3icon = L.icon({iconUrl: 'hazard-sign-on-transparent-background.png', iconSize: [30, 30]});
+        L.marker([44.32461, -79.907383],{icon:hazardMadRiver3icon}).addTo(map).bindPopup("Be cautions crossing the bridge over <b>Mad River</b>.");
+
+
+
         
        // Parking Pine Ridge
 
