@@ -444,7 +444,7 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
 
             // Revised Legend
 
-            var LegendMapApp = "LegendMapApp.jpg",
+            var LegendMapApp = "MapAppLegend.png",
                 imageBounds = [[44.651078, -80.224293], [44.563565, -80.066345]];
                 L.imageOverlay(LegendMapApp, imageBounds).addTo(map);
 
@@ -488,7 +488,7 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
         L.marker([44.583382, -79.68281],{icon:hazardOroMedonte1icon}).addTo(map).bindPopup("DANGEROUS RAILWAY X-ING");
 
     var hazardMidland1icon = L.icon({iconUrl: 'hazard-sign-on-transparent-background.png', iconSize: [30, 30]});
-        L.marker([44.729669, -79.802372],{icon:hazardMidland1icon}).addTo(map).bindPopup("DANGEROUS X-ING OVER HWY 12 <br>(a.k.a. Isobel's Crossing .)");  
+        L.marker([44.729669, -79.802372],{icon:hazardMidland1icon}).addTo(map).bindPopup("DANGEROUS X-ING OVER HWY 12 <br>(a.k.a. <b>Isobel's Crossing .</b>)");  
 
    
 
@@ -1361,7 +1361,7 @@ var polygon = L.polygon(KawarthaSomerville, {
       fillColor: 'salmon', // Fill color
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
-    polygon.bindPopup("Kawartha Forest<br><b>Somerville Forest Tract</b>");
+    polygon.bindPopup("Kawartha Forest<br><b>Somerville Tract</b><p><b>Activities:</b> Hiking, XC Skiing");
 
 
     // KAWARTHA MAIN TRAIL
@@ -4162,7 +4162,7 @@ var circledotWildernessStart = L.circle([44.8068830, -78.8132760], {
       fillColor: 'salmon', // Fill color
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
-    polygon.bindPopup("Simcoe County Forest<b><br>Rathburn Tract (near Young Lake)</b><p><b>Activities Allowed:</b> Hiking, Cycling, Horseback Riding, Dog Walking, XC Skiing, Trapping, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
+    polygon.bindPopup("Simcoe County Forest<b><br>Rathburn Tract (near Young Lake)</b><p><b>Activities Allowed:</b> Hiking, Cycling, Horseback Riding, Dog Walking, XC Skiing, Trapping, Snowmobiling, Hunting, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, OFTR");
 
    
         var Rathburn1coords = [
@@ -4199,7 +4199,7 @@ var circledotWildernessStart = L.circle([44.8068830, -78.8132760], {
       fillColor: 'salmon', // Fill color
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
-    polygon.bindPopup("Simcoe County Forest<b><br>Rathburn Tract</b><p><b>Activities Allowed:</b> Hiking, XC Skiing, Cycling, Horseback Riding, Snowmobiling, Dog Walking, Trapping, Hunting<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
+    polygon.bindPopup("Simcoe County Forest<b><br>Rathburn Tract</b><p><b>Activities Allowed:</b> Hiking, XC Skiing, Cycling, Horseback Riding, Snowmobiling, Dog Walking, Trapping, Hunting, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, OFTR");
 
 
 //var Rathburn2coords = [
@@ -4238,9 +4238,115 @@ var circledotWildernessStart = L.circle([44.8068830, -78.8132760], {
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Breedon Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, Snowmobiling");
+    polygon.bindPopup("Simcoe County Forest - <b>Breedon Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, Snowmobiling, OFTR");
 
 
+    var Strachan1coords = [
+      [44.537831,-79.583875],
+      [44.532949,-79.579724],
+      [44.536167,-79.572320],
+      [44.536852,-79.572947],
+      [44.5400428,-79.5655344],
+      [44.5424067,-79.5675579],
+      [44.539260,-79.574969],
+      [44.540992,-79.576553],
+    ];
+
+    // Create polygon with custom colors
+    var polygon = L.polygon(Strachan1coords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.5     // Fill transparency
+    }).addTo(map);
+
+    polygon.bindPopup("Simcoe County Forest - <b>Strachan Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, OFTR, Snowmobiling, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
+
+
+var Strachan2coords = [
+     [44.5524658,-79.5963785],
+     [44.5576227,-79.5843678],
+     [44.5563798,-79.5833182],
+     [44.55758600,-79.58035748],
+     [44.5534460,-79.5768448],
+     [44.5525825,-79.5788272],
+     [44.5520788,-79.5783927],
+     [44.5529262,-79.5764130],
+     [44.54491277,-79.56965856],
+     [44.54468396,-79.57020133],
+     [44.54437561,-79.56994086],
+     [44.54391637,-79.57102447],
+     [44.54407139,-79.57115804],
+     [44.5416764,-79.5769915],
+     [44.5507745,-79.5847528],
+     [44.54760032,-79.59223581],
+    ];
+
+    // Create polygon with custom colors
+    var polygon = L.polygon(Strachan2coords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.5     // Fill transparency
+    }).addTo(map);
+
+    polygon.bindPopup("Simcoe County Forest - <b>Strachan Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, OFTR, Snowmobiling, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
+
+
+
+var Orocoords = [
+      [44.5575038,-79.6005982],
+      [44.56071630,-79.59315235],
+      [44.5558462,-79.5890484],
+      [44.5526281,-79.5965072],
+    ];
+
+    // Create polygon with custom colors
+    var polygon = L.polygon(Orocoords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.5     // Fill transparency
+    }).addTo(map);
+
+    polygon.bindPopup("Simcoe County Forest - <b>Oro Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, OFTR, Snowmobiling");
+
+
+    var Johnsoncoords = [
+      [44.5543472,-79.6081323],
+      [44.5574238,-79.6008348],
+      [44.552516, -79.596747],
+      [44.54940579,-79.60395575],
+    ];
+
+    // Create polygon with custom colors
+    var polygon = L.polygon(Johnsoncoords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.5     // Fill transparency
+    }).addTo(map);
+
+    polygon.bindPopup("Simcoe County Forest - <b>Johnson Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, OFTR, Snowmobiling, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
+
+
+
+    var Arbourcoords = [
+      [44.5505957,-79.6148344],
+      [44.5536444,-79.6075280],
+      [44.5488951,-79.6035100],
+      [44.5457071,-79.6108089],
+    ];
+
+    // Create polygon with custom colors
+    var polygon = L.polygon(Arbourcoords, {
+      color: 'salmon',       // Border color
+      weight: 2,           // Border thickness
+      fillColor: 'salmon', // Fill color
+      fillOpacity: 0.5     // Fill transparency
+    }).addTo(map);
+
+    polygon.bindPopup("Simcoe County Forest - <b>Arbour Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, OFTR, Horseback Riding, Dog Sledding, Snowmobiling<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
 
 
     // ORILLIA MAIN TRAIL
@@ -4645,113 +4751,6 @@ var circledotWildernessStart = L.circle([44.756539, -79.15518], {
                 // BARRIE Forest Tracts
 
 
-    var Strachan1coords = [
-      [44.537831,-79.583875],
-      [44.532949,-79.579724],
-      [44.536167,-79.572320],
-      [44.536852,-79.572947],
-      [44.5400428,-79.5655344],
-      [44.5424067,-79.5675579],
-      [44.539260,-79.574969],
-      [44.540992,-79.576553],
-    ];
-
-    // Create polygon with custom colors
-    var polygon = L.polygon(Strachan1coords, {
-      color: 'salmon',       // Border color
-      weight: 2,           // Border thickness
-      fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
-    }).addTo(map);
-
-    polygon.bindPopup("Simcoe County Forest - <b>Strachan Tract</b><p>");
-
-
-var Strachan2coords = [
-     [44.5524658,-79.5963785],
-     [44.5576227,-79.5843678],
-     [44.5563798,-79.5833182],
-     [44.55758600,-79.58035748],
-     [44.5534460,-79.5768448],
-     [44.5525825,-79.5788272],
-     [44.5520788,-79.5783927],
-     [44.5529262,-79.5764130],
-     [44.54491277,-79.56965856],
-     [44.54468396,-79.57020133],
-     [44.54437561,-79.56994086],
-     [44.54391637,-79.57102447],
-     [44.54407139,-79.57115804],
-     [44.5416764,-79.5769915],
-     [44.5507745,-79.5847528],
-     [44.54760032,-79.59223581],
-    ];
-
-    // Create polygon with custom colors
-    var polygon = L.polygon(Strachan2coords, {
-      color: 'salmon',       // Border color
-      weight: 2,           // Border thickness
-      fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
-    }).addTo(map);
-
-    polygon.bindPopup("Simcoe County Forest - <b>Strachan Tract</b><p>");
-
-
-
-var Orocoords = [
-      [44.5575038,-79.6005982],
-      [44.56071630,-79.59315235],
-      [44.5558462,-79.5890484],
-      [44.5526281,-79.5965072],
-    ];
-
-    // Create polygon with custom colors
-    var polygon = L.polygon(Orocoords, {
-      color: 'salmon',       // Border color
-      weight: 2,           // Border thickness
-      fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
-    }).addTo(map);
-
-    polygon.bindPopup("Simcoe County Forest - <b>Oro Tract</b><p>");
-
-
-    var Johnsoncoords = [
-      [44.5543472,-79.6081323],
-      [44.5574238,-79.6008348],
-      [44.552516, -79.596747],
-      [44.54940579,-79.60395575],
-    ];
-
-    // Create polygon with custom colors
-    var polygon = L.polygon(Johnsoncoords, {
-      color: 'salmon',       // Border color
-      weight: 2,           // Border thickness
-      fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
-    }).addTo(map);
-
-    polygon.bindPopup("Simcoe County Forest - <b>Johnson Tract</b><p>");
-
-
-
-    var Arbourcoords = [
-      [44.5505957,-79.6148344],
-      [44.5536444,-79.6075280],
-      [44.5488951,-79.6035100],
-      [44.5457071,-79.6108089],
-    ];
-
-    // Create polygon with custom colors
-    var polygon = L.polygon(Arbourcoords, {
-      color: 'salmon',       // Border color
-      weight: 2,           // Border thickness
-      fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
-    }).addTo(map);
-
-    polygon.bindPopup("Simcoe County Forest - <b>Arbour Tract</b><p>");
-
 
 var Crawfordcoords = [
       [44.5491692,-79.6345475],
@@ -4772,7 +4771,7 @@ var Crawfordcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Johnson Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Crawford Tract</b><p>");
 
 
 var Tustincoords = [
