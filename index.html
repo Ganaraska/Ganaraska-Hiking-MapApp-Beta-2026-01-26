@@ -79,7 +79,7 @@ map.setView([44.613927, -79.414964], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap, GTDM, GHTA, Airbus DS, PlanetObserver</a>'
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap, GoTheDistanceMaps, GHTA, ESRI</a>'
 }).addTo(map);
 
 
@@ -106,17 +106,17 @@ var CycleOSM = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z
 	//attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
-//var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	// attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-    //});
+    });
 
 
-var Stadia_AlidadeSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
-	minZoom: 0,
-	maxZoom: 20,
+//var Stadia_AlidadeSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
+	//minZoom: 0,
+	//maxZoom: 20,
 	//attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'jpg'
-});
+	//ext: 'jpg'
+//});
 
 
 // Add a scale bar to the map-------------------------------------------------------------------------------------
@@ -832,8 +832,8 @@ var baseMaps = {
     "OSM Cycle/Hiking (TCT & Contours)": CycleOSM,
     "OpenStreetMap (Humanitarian)": osm_HOT,
     "OpenTopoMap (Contours)": otm,
-    "Stadia Imagery": Stadia_AlidadeSatellite,
-    //"ESRI World Imagery": Esri_WorldImagery,
+    //"Stadia Imagery": Stadia_AlidadeSatellite,
+    "ESRI World Imagery": Esri_WorldImagery,
 };
 
 //L.control.layers(baseMaps).addTo(map); // Original code - Use this commad IF only the map STYLES are listed without any other layers!!
