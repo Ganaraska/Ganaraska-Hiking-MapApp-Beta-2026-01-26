@@ -821,8 +821,8 @@ var poi = L.layerGroup([pointofinterestPineRide1icon, pointofinterestPineRide2ic
 
 var baseMaps = {
     "OpenStreetMap (Standard)": osm,
-    "OpenStreetMap (Alt)": osm_HOT,
     "OSM Cycle/Hiking (TCT & Contours)": CycleOSM,
+    "OpenStreetMap (Alt)": osm_HOT,
     "OpenTopoMap (Contours)": otm,
     "ESRI World Imagery": Esri_WorldImagery,
 };
@@ -4160,7 +4160,7 @@ var circledotWildernessStart = L.circle([44.8068830, -78.8132760], {
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
     polygon.bindPopup("Simcoe County Forest<b><br>Rathburn Tract (near Young Lake)</b><p><b>Activities Allowed:</b> Hiking, Cycling, Horseback Riding, Dog Walking, XC Skiing, Trapping, Snowmobiling, Hunting, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, OFTR");
 
@@ -4197,7 +4197,7 @@ var circledotWildernessStart = L.circle([44.8068830, -78.8132760], {
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
     polygon.bindPopup("Simcoe County Forest<b><br>Rathburn Tract</b><p><b>Activities Allowed:</b> Hiking, XC Skiing, Cycling, Horseback Riding, Snowmobiling, Dog Walking, Trapping, Hunting, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, OFTR");
 
@@ -4257,7 +4257,7 @@ var circledotWildernessStart = L.circle([44.8068830, -78.8132760], {
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
     polygon.bindPopup("Simcoe County Forest - <b>Strachan Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, OFTR, Snowmobiling, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
@@ -4287,7 +4287,7 @@ var Strachan2coords = [
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
     polygon.bindPopup("Simcoe County Forest - <b>Strachan Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, OFTR, Snowmobiling, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
@@ -4306,7 +4306,7 @@ var Orocoords = [
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
     polygon.bindPopup("Simcoe County Forest - <b>Oro Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, OFTR, Snowmobiling");
@@ -4324,7 +4324,7 @@ var Orocoords = [
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
     polygon.bindPopup("Simcoe County Forest - <b>Johnson Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Hunting, Trapping, OFTR, Snowmobiling, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
@@ -4343,7 +4343,7 @@ var Orocoords = [
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
     polygon.bindPopup("Simcoe County Forest - <b>Arbour Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, OFTR, Horseback Riding, Dog Sledding, Snowmobiling<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV");
@@ -4771,7 +4771,7 @@ var Crawfordcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Crawford Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Crawford Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling<p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, OFTR");
 
 
 var Tustincoords = [
@@ -4790,7 +4790,7 @@ var Tustincoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Tustin Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Tustin Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, Snowmobiling, ATV, OFTR");
 
 
     var Amoscoords = [
@@ -4809,7 +4809,7 @@ var Tustincoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Amos Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Amos Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Camping, Snowmobiling, ATV, OFTR");
 
 
     
@@ -4826,10 +4826,10 @@ var Tustincoords = [
       color: 'salmon',       // Border color
       weight: 2,           // Border thickness
       fillColor: 'salmon', // Fill color
-      fillOpacity: 0.5     // Fill transparency
+      fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>North Barr Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>North Barr Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, ATV, OFTR <p><b>Forbiden Activities:</b> Target shooting, Camping");
 
 
     var OrrockCreekNEcoords = [
@@ -4852,7 +4852,7 @@ var Tustincoords = [
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Orrock Creek N.E. Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Orrock Creek N.E. Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, OFTR <p><b>Forbiden Activities:</b> Target shooting, Camping, ATV, Snowmobiling");
 
 
     var OrrockCreekNcoords = [
@@ -4879,7 +4879,7 @@ var Tustincoords = [
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Orrock Creek North Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Orrock Creek North Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, OFTR, Snowmobiling, ATV, OFTR <p><b>Forbiden Activities:</b> Target shooting, Camping");
 
 
     var OrrockCreekScoords = [
@@ -4915,7 +4915,7 @@ var Tustincoords = [
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Orrock Creek South Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Orrock Creek South Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, OFTR, Snowmobiling, ATV, OFTR <p><b>Forbiden Activities:</b> Target shooting, Camping");
 
 
     var Midhurstcoords = [
@@ -4938,7 +4938,7 @@ var Tustincoords = [
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Midhurst Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Midhurst Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Hunting, ATV, OFTR, Snowmobiling, Target shooting, Camping");
 
 
     var Museumcoords = [
@@ -4984,7 +4984,7 @@ var Tustincoords = [
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Museum Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Museum Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling<p><b>Forbiden Activities:</b> Hunting, ATV, OFTR, Target shooting, Camping");
 
 
         var Charcoalcoords = [
@@ -5006,7 +5006,7 @@ var Tustincoords = [
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-    polygon.bindPopup("Simcoe County Forest - <b>Charcoal Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Charcoal Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Hunting<p><b>Forbiden Activities:</b> ATV, OFTR, Snowmobiling, Target shooting, Camping");
 
 
     var Huroniacoords = [
@@ -5034,7 +5034,7 @@ var Tustincoords = [
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-polygon.bindPopup("Simcoe County Forest - <b>Huronia Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Huronia Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Hunting<p><b>Forbiden Activities:</b> ATV, OFTR, Snowmobiling, Target shooting, Camping");
 
 
     var Millercoords = [
@@ -5054,7 +5054,7 @@ var polygon = L.polygon(Millercoords, {
       fillOpacity: 0.4     // Fill transparency
     }).addTo(map);
 
-polygon.bindPopup("Simcoe County Forest - <b>Miller Tract</b><p>");
+    polygon.bindPopup("Simcoe County Forest - <b>Miller Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> ATV, OFTR, Target shooting, Camping");
 
     // BARRIE MAIN TRAIL
 
@@ -6220,7 +6220,7 @@ var circledotTinyStart = L.circle([44.7499988,-79.9602955], {
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Hogback Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Hogback Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting, ATV, OFTR<p><b>Forbiden Activities:</b> Target shooting, Camping");
 
 
     var Brentwoodcoords = [
@@ -6245,7 +6245,7 @@ var circledotTinyStart = L.circle([44.7499988,-79.9602955], {
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Brentwood Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Brentwood Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting, ATV, OFTR<p><b>Forbiden Activities:</b> Target shooting, Camping");
 
 
     var Loudencoords = [
@@ -6265,7 +6265,7 @@ var circledotTinyStart = L.circle([44.7499988,-79.9602955], {
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Louden Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Louden Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting, ATV, OFTR<p><b>Forbiden Activities:</b> Target shooting, Camping");
 
 
 
@@ -7425,7 +7425,7 @@ var polyline = L.polyline(latlngs, {color: 'darkorange', weight: 6}).addTo(map);
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Fitzgerald Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Fitzgerald Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> Target shooting, ATV, OFTR, Camping");
 
 
 var FitzgeraldSEcoords = [
@@ -7447,7 +7447,7 @@ var FitzgeraldSEcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Fitzgerald Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Fitzgerald Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> Target shooting, ATV, OFTR, Camping");
 
 
     var FitzgeraldNcoords = [
@@ -7476,7 +7476,7 @@ var FitzgeraldSEcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Fitzgerald Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Fitzgerald Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> Target shooting, ATV, OFTR, Camping");
 
 
     var BoysNcoords = [
@@ -7495,7 +7495,7 @@ var FitzgeraldSEcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Boys Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Boys Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> Target shooting, ATV, OFTR, Camping");
 
     var BoysCentralcoords = [
         [44.598635,-79.675372],
@@ -7513,7 +7513,7 @@ var FitzgeraldSEcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Boys Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Boys Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> Target shooting, ATV, OFTR, Camping");
 
 
     var BoysScoords = [
@@ -7532,7 +7532,7 @@ var FitzgeraldSEcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Boys Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Boys Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Snowmobiling, Hunting<p><b>Forbiden Activities:</b> Target shooting, ATV, OFTR, Camping");
 
     var MountStLouiscoords = [
         [44.622480,-79.695448],
@@ -7548,7 +7548,7 @@ var FitzgeraldSEcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Mount St. Louis Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Mount St. Louis Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding, Hunting<p><b>Forbiden Activities:</b> Target shooting, ATV, OFTR, Camping, Snowmobiling");
 
 
     var Barrcoords = [
@@ -7570,7 +7570,7 @@ var FitzgeraldSEcoords = [
       fillOpacity: 0.5     // Fill transparency
     }).addTo(map);
 
-        polygon.bindPopup("Simcoe County Forest - <b>Barr Tract</b>");
+    polygon.bindPopup("Simcoe County Forest - <b>Barr Tract</b><p><b>Activities Allowed:</b> Hiking, Cycling, XC Skiing, Dog Walking, Trapping, Horseback Riding, Dog Sledding<p><b>Forbiden Activities:</b> Target shooting, Hunting, ATV, OFTR, Camping, Snowmobiling");
 
 
 
@@ -8811,6 +8811,1107 @@ var circledotTinyStart = L.circle([44.7499986, -79.9602998], {
     weight: 10,
     radius: 20,
 }).addTo(map);
+
+
+
+
+// BRUCE TRAIL
+
+var latlngs = [
+    [44.2669208, -80.1651478],
+    [44.2703052, -80.1659204],
+    [44.2708884, -80.1659299],
+    [44.2716038, -80.1661691],
+    [44.2720605, -80.1660957],
+    [44.2723847, -80.1663218],
+    [44.2726855, -80.1664258],
+    [44.2738294, -80.1666583],
+    [44.2745622, -80.1667703],
+    [44.2748337, -80.1665926],
+    [44.2751060, -80.1669511],
+    [44.2755080, -80.1671611],
+    [44.2756907, -80.1675169],
+    [44.2759131, -80.1674712],
+    [44.2761535, -80.1677351],
+    [44.2764224, -80.1678090],
+    [44.2768098, -80.1678231],
+    [44.2773305, -80.1675176],
+    [44.2776892, -80.1675282],
+    [44.2776878, -80.1678385],
+    [44.2778332, -80.1683918],
+    [44.2780459, -80.1687888],
+    [44.2780827, -80.1692806],
+    [44.2780125, -80.1696023],
+    [44.2780915, -80.1697333],
+    [44.2791569, -80.1699554],
+    [44.2794042, -80.1699279],
+    [44.2796392, -80.1701835],
+    [44.2799099, -80.1703005],
+    [44.2802317, -80.1701298],
+    [44.2803913, -80.1702976],
+    [44.2805415, -80.1703232],
+    [44.2807335, -80.1702410],
+    [44.2808049, -80.1703709],
+    [44.2807785, -80.1713871],
+    [44.2800322, -80.1727402],
+    [44.2796738, -80.1730489],
+    [44.2790966, -80.1742670],
+    [44.2790146, -80.1746190],
+    [44.2790490, -80.1750874],
+    [44.2785704, -80.1757536],
+    [44.2783297, -80.1765932],
+    [44.2782484, -80.1766449],
+    [44.2779845, -80.1771582],
+    [44.2778763, -80.1775410],
+    [44.2776696, -80.1778501],
+    [44.2776557, -80.1781044],
+    [44.2774538, -80.1784293],
+    [44.2774168, -80.1787455],
+    [44.2773099, -80.1788735],
+    [44.2772624, -80.1791521],
+    [44.2769089, -80.1798430],
+    [44.2765667, -80.1808470],
+    [44.2763755, -80.1811963],
+    [44.2763785, -80.1814179],
+    [44.2762036, -80.1817759],
+    [44.2761369, -80.1822208],
+    [44.2759121, -80.1825272],
+    [44.2757969, -80.1828523],
+    [44.2754848, -80.1831358],
+    [44.2752649, -80.1835318],
+    [44.2749230, -80.1836655],
+    [44.2741334, -80.1846329],
+    [44.2738741, -80.1848133],
+    [44.2736200, -80.1848772],
+    [44.2733883, -80.1851412],
+    [44.2731154, -80.1852820],
+    [44.2729689, -80.1851495],
+    [44.2723331, -80.1857937],
+    [44.2721305, -80.1858409],
+    [44.2719821, -80.1860566],
+    [44.2718303, -80.1860770],
+    [44.2717831, -80.1864640],
+    [44.2716524, -80.1864183],
+    [44.2715425, -80.1865139],
+    [44.2708680, -80.1876868],
+    [44.2708562, -80.1884539],
+    [44.2710054, -80.1890470],
+    [44.2710191, -80.1895373],
+    [44.2708216, -80.1900165],
+    [44.2708659, -80.1903460],
+    [44.2707585, -80.1911513],
+    [44.2709447, -80.1915343],
+    [44.2709560, -80.1917936],
+    [44.2707854, -80.1927765],
+    [44.2708213, -80.1930154],
+    [44.2707364, -80.1937221],
+    [44.2704099, -80.1941451],
+    [44.2699774, -80.1954330],
+    [44.2692668, -80.1961581],
+    [44.2691877, -80.1964622],
+    [44.2691993, -80.1968979],
+    [44.2688116, -80.1973416],
+    [44.2687899, -80.1977657],
+    [44.2689571, -80.1979463],
+    [44.2690567, -80.1982353],
+    [44.2693607, -80.1985589],
+    [44.2699944, -80.1988073],
+    [44.2701923, -80.1987556],
+    [44.2709784, -80.1990479],
+    [44.2714444, -80.2001892],
+    [44.2718566, -80.2007088],
+    [44.2720669, -80.2008111],
+    [44.2728621, -80.2006234],
+    [44.2734168, -80.2008437],
+    [44.2735158, -80.2022629],
+    [44.2733343, -80.2027352],
+    [44.2730046, -80.2030419],
+    [44.2728269, -80.2035416],
+    [44.2729329, -80.2038845],
+    [44.2729081, -80.2045344],
+    [44.2731256, -80.2056753],
+    [44.2735837, -80.2066262],
+    [44.2737796, -80.2068060],
+    [44.2742108, -80.2070912],
+    [44.2743329, -80.2070671],
+    [44.2746138, -80.2072624],
+    [44.2749799, -80.2073298],
+    [44.2752851, -80.2067013],
+    [44.2754957, -80.2056889],
+    [44.2761393, -80.2043678],
+    [44.2776595, -80.2017885],
+    [44.2783880, -80.2009385],
+    [44.2805796, -80.2015991],
+    [44.2825272, -80.2019829],
+    [44.2876041, -80.2031723],
+    [44.2893746, -80.2035039],
+    [44.2899394, -80.2041281],
+    [44.2902212, -80.2040981],
+    [44.2904918, -80.2038065],
+    [44.2908962, -80.2038403],
+    [44.2911042, -80.2040077],
+    [44.2913231, -80.2043973],
+    [44.2914006, -80.2047365],
+    [44.2915333, -80.2048917],
+    [44.2917026, -80.2049026],
+    [44.2922527, -80.2042670],
+    [44.2928262, -80.2041771],
+    [44.2912023, -80.2113870],
+    [44.2913315, -80.2116479],
+    [44.2916879, -80.2115997],
+    [44.2921763, -80.2119434],
+    [44.2924583, -80.2120532],
+    [44.2930123, -80.2122066],
+    [44.2931498, -80.2121495],
+    [44.2938961, -80.2122381],
+    [44.2942724, -80.2124135],
+    [44.2947426, -80.2122528],
+    [44.2952444, -80.2123624],
+    [44.2955148, -80.2125498],
+    [44.2957895, -80.2125162],
+    [44.2962207, -80.2126415],
+    [44.2967204, -80.2129439],
+    [44.2983381, -80.2055441],
+    [44.2986414, -80.2051226],
+    [44.2989354, -80.2045408],
+    [44.2989774, -80.2037153],
+    [44.2991319, -80.2031924],
+    [44.2991039, -80.2023746],
+    [44.2993968, -80.2012964],
+    [44.2996742, -80.2007164],
+    [44.2997362, -80.2001449],
+    [44.3000760, -80.1997418],
+    [44.3002683, -80.1989828],
+    [44.3005814, -80.1983611],
+    [44.3010619, -80.1979083],
+    [44.3016078, -80.1968235],
+    [44.3021949, -80.1960678],
+    [44.3029395, -80.1952805],
+    [44.3039528, -80.1933819],
+    [44.3044390, -80.1931380],
+    [44.3046152, -80.1928000],
+    [44.3048742, -80.1925402],
+    [44.3053501, -80.1923205],
+    [44.3055471, -80.1924647],
+    [44.3063033, -80.1925464],
+    [44.3070665, -80.1924086],
+    [44.3075198, -80.1929028],
+    [44.3089383, -80.1935890],
+    [44.3095508, -80.1937162],
+    [44.3112790, -80.1943278],
+    [44.3119123, -80.1944499],
+    [44.3121356, -80.1944242],
+    [44.3122937, -80.1937438],
+    [44.3128436, -80.1938363],
+    [44.3131880, -80.1938114],
+    [44.3134535, -80.1939616],
+    [44.3142302, -80.1937865],
+    [44.3145575, -80.1935786],
+    [44.3148826, -80.1935464],
+    [44.3149919, -80.1935907],
+    [44.3150419, -80.1939701],
+    [44.3151315, -80.1939870],
+    [44.3153942, -80.1942923],
+    [44.3154052, -80.1945778],
+    [44.3157365, -80.1951859],
+    [44.3160264, -80.1953122],
+    [44.3162416, -80.1956070],
+    [44.3166833, -80.1959197],
+    [44.3170256, -80.1957570],
+    [44.3171720, -80.1954252],
+    [44.3170334, -80.1951255],
+    [44.3169792, -80.1946770],
+    [44.3161509, -80.1932638],
+    [44.3163395, -80.1932761],
+    [44.3168393, -80.1930852],
+    [44.3176802, -80.1931194],
+    [44.3178765, -80.1932177],
+    [44.3181941, -80.1936528],
+    [44.3196451, -80.1942524],
+    [44.3197982, -80.1945106],
+    [44.3198142, -80.1953292],
+    [44.3200580, -80.1957733],
+    [44.3206581, -80.1959780],
+    [44.3209865, -80.1958891],
+    [44.3213461, -80.1956332],
+    [44.3217455, -80.1955631],
+    [44.3218215, -80.1955967],
+    [44.3218780, -80.1957961],
+    [44.3221575, -80.1958274],
+    [44.3223990, -80.1957555],
+    [44.3224608, -80.1958327],
+    [44.3224945, -80.1970558],
+    [44.3222247, -80.1978407],
+    [44.3223707, -80.1987915],
+    [44.3221310, -80.1990897],
+    [44.3219182, -80.1992203],
+    [44.3215159, -80.1993095],
+    [44.3212479, -80.1995111],
+    [44.3211978, -80.2002761],
+    [44.3213077, -80.2007501],
+    [44.3214883, -80.2009842],
+    [44.3221139, -80.2013171],
+    [44.3221241, -80.2014536],
+    [44.3202641, -80.2100874],
+    [44.3205220, -80.2104438],
+    [44.3252441, -80.2114752],
+    [44.3257088, -80.2114406],
+    [44.3257905, -80.2113742],
+    [44.3259724, -80.2114060],
+    [44.3293530, -80.2122124],
+    [44.3297676, -80.2122534],
+    [44.3318456, -80.2127922],
+    [44.3328594, -80.2127662],
+    [44.3330843, -80.2128323],
+    [44.3331279, -80.2127715],
+    [44.3332714, -80.2128989],
+    [44.3331046, -80.2136649],
+    [44.3335488, -80.2142420],
+    [44.3337665, -80.2142932],
+    [44.3340400, -80.2145632],
+    [44.3342878, -80.2146749],
+    [44.3351923, -80.2145363],
+    [44.3359672, -80.2146921],
+    [44.3363059, -80.2148549],
+    [44.3363954, -80.2156468],
+    [44.3365404, -80.2160758],
+    [44.3368405, -80.2163676],
+    [44.3369133, -80.2173030],
+    [44.3372180, -80.2176543],
+    [44.3373233, -80.2178821],
+    [44.3374278, -80.2187209],
+    [44.3373898, -80.2194785],
+    [44.3372977, -80.2197282],
+    [44.3371655, -80.2207494],
+    [44.3373145, -80.2214195],
+    [44.3372089, -80.2223637],
+    [44.3374575, -80.2228257],
+    [44.3371999, -80.2238875],
+    [44.3368982, -80.2258078],
+    [44.3370946, -80.2261290],
+    [44.3374178, -80.2262621],
+    [44.3374860, -80.2263675],
+    [44.3380080, -80.2261505],
+    [44.3382488, -80.2264177],
+    [44.3384715, -80.2257964],
+    [44.3384674, -80.2256254],
+    [44.3382931, -80.2252857],
+    [44.3383011, -80.2248012],
+    [44.3385904, -80.2242063],
+    [44.3389046, -80.2239647],
+    [44.3391460, -80.2232772],
+    [44.3394012, -80.2228078],
+    [44.3396083, -80.2225751],
+    [44.3395769, -80.2224809],
+    [44.3397025, -80.2224649],
+    [44.3398270, -80.2222683],
+    [44.3398479, -80.2219295],
+    [44.3400213, -80.2212902],
+    [44.3402223, -80.2211714],
+    [44.3404173, -80.2205206],
+    [44.3406798, -80.2202933],
+    [44.3407676, -80.2199361],
+    [44.3407493, -80.2196179],
+    [44.3409062, -80.2194742],
+    [44.3410024, -80.2191751],
+    [44.3409938, -80.2182838],
+    [44.3411024, -80.2170884],
+    [44.3412683, -80.2160381],
+    [44.3413611, -80.2158376],
+    [44.3413530, -80.2155819],
+    [44.3414271, -80.2155685],
+    [44.3415079, -80.2153262],
+    [44.3415230, -80.2148044],
+    [44.3416571, -80.2146197],
+    [44.3415034, -80.2132309],
+    [44.3416851, -80.2127840],
+    [44.3416233, -80.2125263],
+    [44.3417071, -80.2119741],
+    [44.3415109, -80.2118852],
+    [44.3414454, -80.2116592],
+    [44.3416035, -80.2113190],
+    [44.3419359, -80.2113194],
+    [44.3421653, -80.2112307],
+    [44.3424771, -80.2113261],
+    [44.3426746, -80.2105818],
+    [44.3410856, -80.2097594],
+    [44.3404508, -80.2091856],
+    [44.3402497, -80.2092343],
+    [44.3400881, -80.2091759],
+    [44.3397115, -80.2083686],
+    [44.3393713, -80.2081414],
+    [44.3390683, -80.2082006],
+    [44.3385128, -80.2081372],
+    [44.3381508, -80.2083456],
+    [44.3380147, -80.2082879],
+    [44.3378106, -80.2083517],
+    [44.3376950, -80.2093561],
+    [44.3373890, -80.2099445],
+    [44.3372205, -80.2100600],
+    [44.3370099, -80.2100683],
+    [44.3369202, -80.2101764],
+    [44.3367200, -80.2102263],
+    [44.3366182, -80.2103616],
+    [44.3365101, -80.2103474],
+    [44.3362566, -80.2104740],
+    [44.3359715, -80.2103466],
+    [44.3357030, -80.2103436],
+    [44.3347433, -80.2097755],
+    [44.3344286, -80.2092531],
+    [44.3342643, -80.2091069],
+    [44.3339510, -80.2090287],
+    [44.3335164, -80.2090832],
+    [44.3331399, -80.2088501],
+    [44.3327506, -80.2079285],
+    [44.3329616, -80.2072617],
+    [44.3329683, -80.2069838],
+    [44.3336183, -80.2061946],
+    [44.3348476, -80.2042561],
+    [44.3350796, -80.2036860],
+    [44.3352687, -80.2027877],
+    [44.3355797, -80.2018763],
+    [44.3360609, -80.1996926],
+    [44.3369352, -80.1978777],
+    [44.3378871, -80.1980583],
+    [44.3382721, -80.1982111],
+    [44.3385420, -80.1982081],
+    [44.3393606, -80.1984330],
+    [44.3398944, -80.1986624],
+    [44.3401632, -80.1984898],
+    [44.3402789, -80.1980636],
+    [44.3406013, -80.1979220],
+    [44.3408501, -80.1980101],
+    [44.3409326, -80.1981689],
+    [44.3412635, -80.1983090],
+    [44.3416246, -80.1982670],
+    [44.3418567, -80.1983523],
+    [44.3419855, -80.1985546],
+    [44.3423011, -80.1987210],
+    [44.3429123, -80.1995163],
+    [44.3433332, -80.2004219],
+    [44.3433894, -80.2012602],
+    [44.3435927, -80.2017882],
+    [44.3443342, -80.2024710],
+    [44.3448068, -80.2021606],
+    [44.3460220, -80.1968646],
+    [44.3464714, -80.1945520],
+    [44.3466001, -80.1942463],
+    [44.3469500, -80.1939659],
+    [44.3469375, -80.1948149],
+    [44.3471115, -80.1950333],
+    [44.3472847, -80.1954482],
+    [44.3477884, -80.1961411],
+    [44.3481456, -80.1969801],
+    [44.3483731, -80.1980990],
+    [44.3484788, -80.1990608],
+    [44.3489202, -80.2008357],
+    [44.3487105, -80.2016488],
+    [44.3486802, -80.2022821],
+    [44.3484290, -80.2038805],
+    [44.3489172, -80.2043923],
+    [44.3496429, -80.2047270],
+    [44.3500865, -80.2062014],
+    [44.3505319, -80.2067346],
+    [44.3507913, -80.2072338],
+    [44.3509555, -80.2073686],
+    [44.3515656, -80.2075458],
+    [44.3520411, -80.2078853],
+    [44.3522919, -80.2082036],
+    [44.3526317, -80.2084694],
+    [44.3534537, -80.2087410],
+    [44.3539042, -80.2091256],
+    [44.3546453, -80.2093137],
+    [44.3546735, -80.2097990],
+    [44.3549326, -80.2099859],
+    [44.3552201, -80.2099832],
+    [44.3553337, -80.2100699],
+    [44.3552610, -80.2105219],
+    [44.3550055, -80.2109180],
+    [44.3548712, -80.2118314],
+    [44.3545337, -80.2125589],
+    [44.3535317, -80.2143246],
+    [44.3535635, -80.2155319],
+    [44.3536565, -80.2157178],
+    [44.3537530, -80.2165519],
+    [44.3540915, -80.2172882],
+    [44.3547893, -80.2184544],
+    [44.3548428, -80.2183869],
+    [44.3546642, -80.2178603],
+    [44.3550441, -80.2182549],
+    [44.3550569, -80.2181821],
+    [44.3546851, -80.2171978],
+    [44.3545867, -80.2166745],
+    [44.3549697, -80.2172879],
+    [44.3550492, -80.2170722],
+    [44.3549167, -80.2166816],
+    [44.3548583, -80.2163545],
+    [44.3548994, -80.2160815],
+    [44.3546942, -80.2152645],
+    [44.3547309, -80.2147191],
+    [44.3548146, -80.2144608],
+    [44.3550659, -80.2140934],
+    [44.3552878, -80.2133428],
+    [44.3556800, -80.2125673],
+    [44.3560422, -80.2113613],
+    [44.3561821, -80.2112324],
+    [44.3562284, -80.2112650],
+    [44.3565589, -80.2109264],
+    [44.3570644, -80.2106480],
+    [44.3572292, -80.2104286],
+    [44.3572830, -80.2102060],
+    [44.3572567, -80.2095429],
+    [44.3567111, -80.2084505],
+    [44.3565790, -80.2068290],
+    [44.3562692, -80.2057073],
+    [44.3562827, -80.2055147],
+    [44.3564888, -80.2050308],
+    [44.3559310, -80.2039000],
+    [44.3557789, -80.2032905],
+    [44.3552296, -80.2024727],
+    [44.3553762, -80.2022134],
+    [44.3557303, -80.2019736],
+    [44.3561804, -80.2020469],
+    [44.3561184, -80.2024198],
+    [44.3562237, -80.2026130],
+    [44.3562240, -80.2028648],
+    [44.3561463, -80.2031545],
+    [44.3562770, -80.2038275],
+    [44.3565159, -80.2042019],
+    [44.3569911, -80.2045810],
+    [44.3572855, -80.2049581],
+    [44.3576117, -80.2058545],
+    [44.3576602, -80.2063235],
+    [44.3578526, -80.2065614],
+    [44.3580187, -80.2071343],
+    [44.3581600, -80.2072065],
+    [44.3586572, -80.2079555],
+    [44.3588386, -80.2081253],
+    [44.3589718, -80.2085154],
+    [44.3593613, -80.2087448],
+    [44.3595384, -80.2092526],
+    [44.3599163, -80.2093788],
+    [44.3601620, -80.2093428],
+    [44.3604082, -80.2094852],
+    [44.3605813, -80.2094395],
+    [44.3606071, -80.2088479],
+    [44.3608360, -80.2084981],
+    [44.3606744, -80.2082241],
+    [44.3608458, -80.2081558],
+    [44.3612417, -80.2081512],
+    [44.3617195, -80.2086780],
+    [44.3619132, -80.2095237],
+    [44.3619778, -80.2103759],
+    [44.3616672, -80.2104305],
+    [44.3609531, -80.2111047],
+    [44.3597895, -80.2122713],
+    [44.3595919, -80.2125396],
+    [44.3595146, -80.2127870],
+    [44.3593644, -80.2136986],
+    [44.3597777, -80.2144764],
+    [44.3597441, -80.2146423],
+    [44.3599057, -80.2146127],
+    [44.3598700, -80.2148179],
+    [44.3599607, -80.2149926],
+    [44.3597510, -80.2153562],
+    [44.3598144, -80.2154175],
+    [44.3600621, -80.2155354],
+    [44.3601331, -80.2154933],
+    [44.3603755, -80.2151941],
+    [44.3605532, -80.2147847],
+    [44.3610576, -80.2143602],
+    [44.3611634, -80.2141235],
+    [44.3621400, -80.2139125],
+    [44.3623005, -80.2139379],
+    [44.3629930, -80.2143730],
+    [44.3634048, -80.2145036],
+    [44.3642355, -80.2150703],
+    [44.3645657, -80.2151836],
+    [44.3647419, -80.2153236],
+    [44.3649006, -80.2152788],
+    [44.3659364, -80.2155459],
+    [44.3666129, -80.2156375],
+    [44.3675950, -80.2152402],
+    [44.3675975, -80.2153698],
+    [44.3674204, -80.2156245],
+    [44.3671366, -80.2163597],
+    [44.3668894, -80.2171800],
+    [44.3669549, -80.2177526],
+    [44.3669175, -80.2181835],
+    [44.3676435, -80.2180565],
+    [44.3678711, -80.2178965],
+    [44.3681197, -80.2175868],
+    [44.3685560, -80.2174650],
+    [44.3686461, -80.2176650],
+    [44.3686365, -80.2180756],
+    [44.3690685, -80.2194397],
+    [44.3690770, -80.2210137],
+    [44.3700360, -80.2216084],
+    [44.3910069, -80.2261288],
+    [44.3908795, -80.2266175],
+    [44.3908807, -80.2270287],
+    [44.3906849, -80.2280608],
+    [44.3905810, -80.2282262],
+    [44.3906170, -80.2283940],
+    [44.3898604, -80.2316876],
+    [44.3897882, -80.2324595],
+    [44.3896050, -80.2329418],
+    [44.3897575, -80.2332892],
+    [44.3894855, -80.2335992],
+    [44.3893873, -80.2341817],
+    [44.3896112, -80.2341396],
+    [44.3901986, -80.2344263],
+    [44.3904570, -80.2344088],
+    [44.3915494, -80.2346987],
+    [44.3916884, -80.2346040],
+    [44.3916171, -80.2342994],
+    [44.3918115, -80.2340240],
+    [44.3926026, -80.2338654],
+    [44.3932069, -80.2339554],
+    [44.3933629, -80.2338468],
+    [44.3936504, -80.2340033],
+    [44.3938013, -80.2344482],
+    [44.3939659, -80.2359022],
+    [44.3941698, -80.2359967],
+    [44.3942651, -80.2361881],
+    [44.3945574, -80.2364556],
+    [44.3949381, -80.2374707],
+    [44.3951854, -80.2387567],
+    [44.3948994, -80.2395926],
+    [44.3948241, -80.2402254],
+    [44.3947019, -80.2403202],
+    [44.3944098, -80.2410548],
+    [44.3947911, -80.2413707],
+    [44.3956828, -80.2418024],
+    [44.3958755, -80.2420381],
+    [44.3958373, -80.2426280],
+    [44.3955082, -80.2438398],
+    [44.3955798, -80.2441204],
+    [44.3967082, -80.2443693],
+    [44.3969574, -80.2445520],
+    [44.3973362, -80.2445835],
+    [44.3974584, -80.2446880],
+    [44.3983961, -80.2448111],
+    [44.3982511, -80.2456604],
+    [44.3986809, -80.2457713],
+    [44.3987461, -80.2458574],
+    [44.3991825, -80.2458731],
+    [44.3994265, -80.2460270],
+    [44.3998375, -80.2461023],
+    [44.4000765, -80.2462899],
+    [44.4007597, -80.2466000],
+    [44.4012730, -80.2465111],
+    [44.4020504, -80.2466281],
+    [44.4024031, -80.2465566],
+    [44.4033781, -80.2465965],
+    [44.4034748, -80.2466331],
+    [44.4037633, -80.2470067],
+    [44.4039937, -80.2470698],
+    [44.4041434, -80.2470361],
+    [44.4045789, -80.2472243],
+    [44.4047991, -80.2471152],
+    [44.4049449, -80.2471626],
+    [44.4050984, -80.2474058],
+    [44.4053381, -80.2475596],
+    [44.4054870, -80.2478275],
+    [44.4059435, -80.2482669],
+    [44.4063906, -80.2490006],
+    [44.4066173, -80.2490160],
+    [44.4068542, -80.2492159],
+    [44.4069524, -80.2496478],
+    [44.4072082, -80.2500376],
+    [44.4074326, -80.2501739],
+    [44.4079146, -80.2500719],
+    [44.4082448, -80.2503162],
+    [44.4085442, -80.2503084],
+    [44.4090939, -80.2504522],
+    [44.4092872, -80.2511625],
+    [44.4095000, -80.2513229],
+    [44.4096062, -80.2517245],
+    [44.4097362, -80.2518076],
+    [44.4099673, -80.2521593],
+    [44.4099615, -80.2526311],
+    [44.4100582, -80.2529619],
+    [44.4099592, -80.2537778],
+    [44.4102390, -80.2541881],
+    [44.4102827, -80.2543696],
+    [44.4103967, -80.2544218],
+    [44.4104453, -80.2550247],
+    [44.4104082, -80.2553328],
+    [44.4101179, -80.2561412],
+    [44.4098092, -80.2566813],
+    [44.4097756, -80.2571081],
+    [44.4092754, -80.2565753],
+    [44.4087213, -80.2556770],
+    [44.4084619, -80.2556164],
+    [44.4082537, -80.2556636],
+    [44.4078755, -80.2559553],
+    [44.4076873, -80.2562714],
+    [44.4075464, -80.2567163],
+    [44.4076247, -80.2572479],
+    [44.4075955, -80.2576850],
+    [44.4077799, -80.2582719],
+    [44.4077714, -80.2585475],
+    [44.4069824, -80.2601730],
+    [44.4064297, -80.2615162],
+    [44.4061442, -80.2619637],
+    [44.4058696, -80.2621730],
+    [44.4054491, -80.2621756],
+    [44.4051091, -80.2619915],
+    [44.4048636, -80.2620767],
+    [44.4045317, -80.2625882],
+    [44.4042674, -80.2634717],
+    [44.4045342, -80.2635844],
+    [44.4049781, -80.2635076],
+    [44.4051649, -80.2635497],
+    [44.4054767, -80.2632043],
+    [44.4056719, -80.2633558],
+    [44.4059079, -80.2633886],
+    [44.4062131, -80.2631772],
+    [44.4067143, -80.2633152],
+    [44.4067703, -80.2635090],
+    [44.4068529, -80.2635217],
+    [44.4070508, -80.2626576],
+    [44.4070006, -80.2620790],
+    [44.4072029, -80.2614322],
+    [44.4074799, -80.2608337],
+    [44.4077336, -80.2604739],
+    [44.4079226, -80.2598521],
+    [44.4081373, -80.2594492],
+    [44.4087337, -80.2587811],
+    [44.4088025, -80.2589150],
+    [44.4090144, -80.2590364],
+    [44.4091134, -80.2592696],
+    [44.4091297, -80.2596508],
+    [44.4093228, -80.2601558],
+    [44.4095300, -80.2603105],
+    [44.4096222, -80.2605762],
+    [44.4095749, -80.2611165],
+    [44.4096699, -80.2617248],
+    [44.4097471, -80.2618500],
+    [44.4097600, -80.2622965],
+    [44.4097054, -80.2634742],
+    [44.4097784, -80.2637022],
+    [44.4101406, -80.2642314],
+    [44.4104749, -80.2650153],
+    [44.4112410, -80.2651155],
+    [44.4119085, -80.2653192],
+    [44.4120947, -80.2654430],
+    [44.4121722, -80.2654101],
+    [44.4123636, -80.2655058],
+    [44.4130535, -80.2656306],
+    [44.4131655, -80.2657300],
+    [44.4135726, -80.2657099],
+    [44.4142185, -80.2659451],
+    [44.4146407, -80.2659720],
+    [44.4154462, -80.2661596],
+    [44.4155534, -80.2662621],
+    [44.4160130, -80.2663982],
+    [44.4162789, -80.2663048],
+    [44.4187311, -80.2668520],
+    [44.4189668, -80.2671002],
+    [44.4190644, -80.2674614],
+    [44.4192722, -80.2674676],
+    [44.4197374, -80.2673065],
+    [44.4200561, -80.2673369],
+    [44.4209483, -80.2676157],
+    [44.4226611, -80.2679777],
+    [44.4233044, -80.2682470],
+    [44.4236147, -80.2681756],
+    [44.4241706, -80.2684101],
+    [44.4268113, -80.2690374],
+    [44.4303785, -80.2697503],
+    [44.4302106, -80.2702109],
+    [44.4298925, -80.2707533],
+    [44.4295066, -80.2711869],
+    [44.4293054, -80.2719887],
+    [44.4290205, -80.2724148],
+    [44.4290142, -80.2727180],
+    [44.4290786, -80.2727808],
+    [44.4292153, -80.2734423],
+    [44.4290813, -80.2743514],
+    [44.4286705, -80.2749606],
+    [44.4285426, -80.2757484],
+    [44.4286031, -80.2761326],
+    [44.4281810, -80.2764729],
+    [44.4280580, -80.2766868],
+    [44.4281478, -80.2768773],
+    [44.4283276, -80.2769782],
+    [44.4283582, -80.2771802],
+    [44.4283075, -80.2773383],
+    [44.4280888, -80.2775728],
+    [44.4279891, -80.2781396],
+    [44.4291082, -80.2785118],
+    [44.4295108, -80.2788157],
+    [44.4293993, -80.2793751],
+    [44.4290072, -80.2795720],
+    [44.4286720, -80.2802456],
+    [44.4286995, -80.2805622],
+    [44.4288331, -80.2808915],
+    [44.4288071, -80.2810465],
+    [44.4290039, -80.2813065],
+    [44.4288352, -80.2816759],
+    [44.4290211, -80.2819222],
+    [44.4291005, -80.2821951],
+    [44.4289585, -80.2824426],
+    [44.4289984, -80.2826711],
+    [44.4288097, -80.2837946],
+    [44.4288518, -80.2845520],
+    [44.4286913, -80.2850950],
+    [44.4287455, -80.2855539],
+    [44.4287060, -80.2858595],
+    [44.4287754, -80.2861978],
+    [44.4289291, -80.2864898],
+    [44.4291621, -80.2865829],
+    [44.4292831, -80.2868295],
+    [44.4292807, -80.2869400],
+    [44.4290498, -80.2873089],
+    [44.4290593, -80.2874441],
+    [44.4291993, -80.2875661],
+    [44.4289373, -80.2878574],
+    [44.4289201, -80.2881815],
+    [44.4285548, -80.2880740],
+    [44.4275754, -80.2884428],
+    [44.4271625, -80.2884572],
+    [44.4270849, -80.2885271],
+    [44.4269942, -80.2884551],
+    [44.4268170, -80.2884563],
+    [44.4266884, -80.2886658],
+    [44.4264565, -80.2886803],
+    [44.4260504, -80.2892446],
+    [44.4255229, -80.2895117],
+    [44.4251061, -80.2895342],
+    [44.4249274, -80.2898700],
+    [44.4249336, -80.2900653],
+    [44.4251155, -80.2904107],
+    [44.4255479, -80.2908271],
+    [44.4258544, -80.2908210],
+    [44.4263892, -80.2901729],
+    [44.4266243, -80.2900823],
+    [44.4269533, -80.2900589],
+    [44.4271463, -80.2901414],
+    [44.4271937, -80.2900608],
+    [44.4274379, -80.2899785],
+    [44.4278857, -80.2901862],
+    [44.4282013, -80.2902050],
+    [44.4284208, -80.2907059],
+    [44.4284109, -80.2909085],
+    [44.4289517, -80.2918661],
+    [44.4289575, -80.2923734],
+    [44.4292517, -80.2925733],
+    [44.4292937, -80.2925210],
+    [44.4294336, -80.2925775],
+    [44.4294942, -80.2927766],
+    [44.4298624, -80.2930259],
+    [44.4300437, -80.2933318],
+    [44.4296237, -80.2947528],
+    [44.4296215, -80.2951697],
+    [44.4298495, -80.2958424],
+    [44.4300943, -80.2961311],
+    [44.4302959, -80.2961959],
+    [44.4303829, -80.2963248],
+    [44.4305836, -80.2964165],
+    [44.4310490, -80.2961980],
+    [44.4311880, -80.2962852],
+    [44.4315611, -80.2962454],
+    [44.4316895, -80.2964325],
+    [44.4318420, -80.2964590],
+    [44.4319522, -80.2964538],
+    [44.4320984, -80.2963247],
+    [44.4323214, -80.2963853],
+    [44.4324831, -80.2963236],
+    [44.4329397, -80.2965508],
+    [44.4330402, -80.2969339],
+    [44.4330410, -80.2972907],
+    [44.4331628, -80.2973922],
+    [44.4334054, -80.2972900],
+    [44.4339204, -80.2968733],
+    [44.4341123, -80.2968286],
+    [44.4342646, -80.2968968],
+    [44.4346455, -80.2967247],
+    [44.4347883, -80.2966269],
+    [44.4351669, -80.2961088],
+    [44.4353830, -80.2960848],
+    [44.4358232, -80.2962440],
+    [44.4360910, -80.2961865],
+    [44.4363174, -80.2964046],
+    [44.4364987, -80.2967288],
+    [44.4367240, -80.2968697],
+    [44.4368743, -80.2970918],
+    [44.4372095, -80.2971676],
+    [44.4373597, -80.2973547],
+    [44.4376414, -80.2973308],
+    [44.4378527, -80.2964252],
+    [44.4378129, -80.2958372],
+    [44.4376557, -80.2954980],
+    [44.4376347, -80.2945076],
+    [44.4375176, -80.2942916],
+    [44.4375518, -80.2938359],
+    [44.4378401, -80.2933256],
+    [44.4377140, -80.2930836],
+    [44.4376714, -80.2927007],
+    [44.4380947, -80.2924900],
+    [44.4386353, -80.2920827],
+    [44.4386174, -80.2918041],
+    [44.4388368, -80.2910808],
+    [44.4393109, -80.2901439],
+    [44.4396311, -80.2897285],
+    [44.4397651, -80.2893053],
+    [44.4396958, -80.2883649],
+    [44.4397813, -80.2878858],
+    [44.4407141, -80.2867359],
+    [44.4408052, -80.2865251],
+    [44.4410845, -80.2862562],
+    [44.4415382, -80.2853362],
+    [44.4417631, -80.2850778],
+    [44.4419005, -80.2847866],
+    [44.4421170, -80.2845877],
+    [44.4421025, -80.2844456],
+    [44.4422380, -80.2841516],
+    [44.4424654, -80.2839204],
+    [44.4425066, -80.2837435],
+    [44.4427639, -80.2834521],
+    [44.4428409, -80.2832034],
+    [44.4429793, -80.2830581],
+    [44.4430664, -80.2831185],
+    [44.4432207, -80.2830897],
+    [44.4434238, -80.2833091],
+    [44.4439713, -80.2830193],
+    [44.4443662, -80.2830910],
+    [44.4447271, -80.2829929],
+    [44.4449448, -80.2833596],
+    [44.4451147, -80.2832716],
+    [44.4452188, -80.2830625],
+    [44.4453370, -80.2830950],
+    [44.4455162, -80.2830219],
+    [44.4464470, -80.2833942],
+    [44.4467365, -80.2833889],
+    [44.4467520, -80.2835598],
+    [44.4465178, -80.2840376],
+    [44.4461936, -80.2853858],
+    [44.4452831, -80.2896222],
+    [44.4471923, -80.2900363],
+    [44.4482347, -80.2903763],
+    [44.4485792, -80.2906545],
+    [44.4495487, -80.2910370],
+    [44.4497675, -80.2913266],
+    [44.4506299, -80.2914147],
+    [44.4512142, -80.2916233],
+    [44.4522247, -80.2917509],
+    [44.4531137, -80.2921477],
+    [44.4532163, -80.2921382],
+    [44.4531920, -80.2922620],
+    [44.4532525, -80.2922919],
+    [44.4531295, -80.2931644],
+    [44.4529827, -80.2935239],
+    [44.4524254, -80.2960430],
+    [44.4521762, -80.2967780],
+    [44.4520762, -80.2975881],
+    [44.4514758, -80.3003410],
+    [44.4511707, -80.3008160],
+    [44.4501653, -80.3018328],
+    [44.4500239, -80.3021456],
+    [44.4498664, -80.3022710],
+    [44.4484880, -80.3042471],
+    [44.4482930, -80.3044264],
+    [44.4480662, -80.3049878],
+    [44.4477203, -80.3053631],
+    [44.4474697, -80.3058376],
+    [44.4474929, -80.3061463],
+    [44.4473359, -80.3066493],
+    [44.4476046, -80.3073470],
+    [44.4475821, -80.3076134],
+    [44.4471780, -80.3080918],
+    [44.4468287, -80.3089639],
+    [44.4468763, -80.3092420],
+    [44.4466080, -80.3099920],
+    [44.4465116, -80.3109691],
+    [44.4463707, -80.3110271],
+    [44.4462335, -80.3115329],
+    [44.4461601, -80.3131452],
+    [44.4464551, -80.3143867],
+    [44.4466884, -80.3150196],
+    [44.4473723, -80.3160216],
+    [44.4477390, -80.3163372],
+    [44.4478244, -80.3164692],
+    [44.4478431, -80.3167296],
+    [44.4475403, -80.3173703],
+    [44.4475381, -80.3176461],
+    [44.4473585, -80.3178854],
+    [44.4472655, -80.3186557],
+    [44.4469490, -80.3199751],
+    [44.4470338, -80.3201268],
+    [44.4470327, -80.3204594],
+    [44.4468762, -80.3213296],
+    [44.4465655, -80.3224580],
+    [44.4463386, -80.3228125],
+    [44.4461404, -80.3234804],
+    [44.4460143, -80.3243865],
+    [44.4458133, -80.3248602],
+    [44.4458104, -80.3251765],
+    [44.4471629, -80.3256386],
+    [44.4484670, -80.3259114],
+    [44.4493303, -80.3261824],
+    [44.4504009, -80.3263445],
+    [44.4511868, -80.3265779],
+    [44.4513671, -80.3265574],
+    [44.4520417, -80.3268280],
+    [44.4541035, -80.3273660],
+    [44.4543026, -80.3273621],
+    [44.4579739, -80.3107474],
+    [44.4578542, -80.3104099],
+    [44.4579398, -80.3100753],
+    [44.4581938, -80.3099942],
+    [44.4586873, -80.3101873],
+    [44.4590521, -80.3104234],
+    [44.4594383, -80.3105092],
+    [44.4600391, -80.3110671],
+    [44.4611335, -80.3114104],
+    [44.4615412, -80.3116250],
+    [44.4620132, -80.3115821],
+    [44.4622278, -80.3117108],
+    [44.4623780, -80.3116894],
+    [44.4635521, -80.3120257],
+    [44.4646740, -80.3133202],
+    [44.4649100, -80.3134489],
+    [44.4651890, -80.3134274],
+    [44.4653392, -80.3132987],
+    [44.4655752, -80.3125906],
+    [44.4657254, -80.3124189],
+    [44.4661117, -80.3126121],
+    [44.4669485, -80.3127193],
+    [44.4687510, -80.3131914],
+    [44.4701886, -80.3134489],
+    [44.4705963, -80.3134274],
+    [44.4710898, -80.3136849],
+    [44.4713473, -80.3139210],
+    [44.4718623, -80.3139639],
+    [44.4723558, -80.3141570],
+    [44.4727635, -80.3141999],
+    [44.4734287, -80.3145647],
+    [44.4736219, -80.3145647],
+    [44.4736862, -80.3146505],
+    [44.4737721, -80.3145647],
+    [44.4739222, -80.3146076],
+    [44.4740725, -80.3145003],
+    [44.4743729, -80.3147578],
+    [44.4744290, -80.3150025],
+    [44.4742534, -80.3158220],
+    [44.4742801, -80.3159703],
+    [44.4745231, -80.3162169],
+    [44.4745231, -80.3175902],
+    [44.4747591, -80.3184056],
+    [44.4746089, -80.3185558],
+    [44.4748020, -80.3187704],
+    [44.4748020, -80.3189635],
+    [44.4750166, -80.3187919],
+    [44.4759822, -80.3183627],
+    [44.4765186, -80.3184056],
+    [44.4769049, -80.3180623],
+    [44.4770336, -80.3176975],
+    [44.4775057, -80.3168392],
+    [44.4774842, -80.3158522],
+    [44.4775701, -80.3156805],
+    [44.4778061, -80.3157234],
+    [44.4779471, -80.3156676],
+    [44.4782996, -80.3160667],
+    [44.4783854, -80.3160667],
+    [44.4783855, -80.3159165],
+    [44.4784859, -80.3158835],
+    [44.4786000, -80.3161311],
+    [44.4792652, -80.3166461],
+    [44.4794583, -80.3170323],
+    [44.4795227, -80.3170323],
+    [44.4795871, -80.3169036],
+    [44.4796515, -80.3169465],
+    [44.4797587, -80.3167748],
+    [44.4799391, -80.3158868],
+    [44.4800179, -80.3157973],
+    [44.4819260, -80.3162384],
+    [44.4823196, -80.3160280],
+    [44.4824409, -80.3160667],
+    [44.4829774, -80.3164744],
+    [44.4832563, -80.3165603],
+    [44.4833207, -80.3164959],
+    [44.4836855, -80.3167963],
+    [44.4837069, -80.3169680],
+    [44.4838357, -80.3171611],
+    [44.4838357, -80.3174830],
+    [44.4836640, -80.3180194],
+    [44.4837713, -80.3181481],
+    [44.4844151, -80.3183842],
+    [44.4849086, -80.3187060],
+    [44.4849515, -80.3190279],
+    [44.4848871, -80.3193068],
+    [44.4850802, -80.3196073],
+    [44.4860458, -80.3199291],
+    [44.4869685, -80.3200793],
+    [44.4886422, -80.3206587],
+    [44.4889426, -80.3206801],
+    [44.4891787, -80.3205943],
+    [44.4895863, -80.3208089],
+    [44.4898009, -80.3207874],
+    [44.4902515, -80.3213239],
+    [44.4903159, -80.3215814],
+    [44.4902086, -80.3218389],
+    [44.4898980, -80.3222213],
+    [44.4898402, -80.3225318],
+    [44.4903142, -80.3227947],
+    [44.4906744, -80.3228712],
+    [44.4911135, -80.3231261],
+    [44.4912922, -80.3235949],
+    [44.4915168, -80.3233844],
+    [44.4915352, -80.3221927],
+    [44.4906771, -80.3195863],
+    [44.4906388, -80.3191853],
+    [44.4907220, -80.3184037],
+    [44.4908243, -80.3181572],
+    [44.4926322, -80.3185794],
+    [44.4928286, -80.3179672],
+    [44.4932209, -80.3182797],
+    [44.4933498, -80.3185496],
+    [44.4934623, -80.3186128],
+    [44.4936179, -80.3185715],
+    [44.4941102, -80.3192506],
+    [44.4944782, -80.3200431],
+    [44.4946081, -80.3209622],
+    [44.4948446, -80.3210427],
+    [44.4957225, -80.3208651],
+    [44.4959361, -80.3210339],
+    [44.4966750, -80.3212850],
+    [44.4969264, -80.3215956],
+    [44.4972574, -80.3216415],
+    [44.4973743, -80.3214702],
+    [44.4975451, -80.3218572],
+    [44.4982985, -80.3225100],
+    [44.4984933, -80.3225964],
+    [44.4987357, -80.3228339],
+    [44.4989007, -80.3231528],
+    [44.4990706, -80.3232134],
+    [44.4993662, -80.3237063],
+    [44.5001857, -80.3245150],
+    [44.5008252, -80.3252885],
+    [44.5009489, -80.3255669],
+    [44.5013968, -80.3256445],
+    [44.5016427, -80.3257688],
+    [44.5018292, -80.3262224],
+    [44.5019725, -80.3263654],
+    [44.5023760, -80.3263711],
+    [44.5026520, -80.3273703],
+    [44.5028258, -80.3290886],
+    [44.5030421, -80.3292242],
+    [44.5035231, -80.3290056],
+    [44.5041451, -80.3289845],
+    [44.5043045, -80.3291536],
+    [44.5044518, -80.3301337],
+    [44.5043698, -80.3301677],
+    [44.5040026, -80.3300173],
+    [44.5039649, -80.3301070],
+];
+
+
+var polyline = L.polyline(latlngs, {color: 'chocolate', weight: 2}).addTo(map);
+// polyline.bindPopup("<b>Mad River Main Trail</b><br>"); (Original)
+polyline.bindPopup("<b>Bruce Trail</b> - Section connecting to <b>Mad River</b>");
 
 
 // geoJSON attempt (the below DOESN'T WORK! ARGH!!!!! :)
