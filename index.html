@@ -792,8 +792,14 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
          L.marker([44.750293,-79.115505],{icon:pointofinterestWilderness1icon}).addTo(map).bindPopup("High Falls");
 
     var pointofinterestWilderness2icon = L.icon({iconUrl: 'info-svgrepo-com.svg', iconSize: [25, 25]});
-         L.marker([44.757500,-79.125095],{icon:pointofinterestWilderness2icon}).addTo(map).bindPopup("Sedowa Mountain");     
+         L.marker([44.757500,-79.125095],{icon:pointofinterestWilderness2icon}).addTo(map).bindPopup("Sedowa Mountain");  
          
+         
+    var pointofinterestWilderness3icon = L.icon({iconUrl: 'info-svgrepo-com.svg', iconSize: [25, 25]});
+         L.marker([44.832622, -79.059423],{icon:pointofinterestWilderness3icon}).addTo(map).bindPopup("Victoria Falls");    
+         
+         
+
 
 
     var pointofiterestBarrie1icon = L.icon({iconUrl: 'info-svgrepo-com.svg', iconSize: [25, 25]});
@@ -817,10 +823,17 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
         var WildernessCampsite8 = L.marker([44.781932, -79.106874]).bindPopup('Campsite 8')//.addTo(map);
         var WildernessCampsite9 = L.marker([44.81581, -79.072472]).bindPopup('Campsite 9')//.addTo(map);
         var WildernessCampsite10 = L.marker([44.818405, -79.068256]).bindPopup('Campsite 10')//.addTo(map);
+        var WildernessCampsite11 = L.marker([44.840862, -79.033039]).bindPopup('Campsite 11')//.addTo(map);
+        var WildernessCampsite12 = L.marker([44.843387, -78.971435]).bindPopup('Campsite 12')//.addTo(map);
+        var WildernessCampsite13 = L.marker([44.841751, -78.961852]).bindPopup('Campsite 13')//.addTo(map);
+        var WildernessCampsite14 = L.marker([44.854043, -78.945019]).bindPopup('Campsite 14')//.addTo(map);
 
-        
 
-var Campsites = L.layerGroup([WildernessCampsite1, WildernessCampsite2, WildernessCampsite3, WildernessCampsite4, WildernessCampsite5, WildernessCampsite6, WildernessCampsite7, WildernessCampsite8, WildernessCampsite9, WildernessCampsite10]);
+var Campsites = L.layerGroup([WildernessCampsite1, WildernessCampsite2, WildernessCampsite3, WildernessCampsite4, 
+WildernessCampsite5, WildernessCampsite6, WildernessCampsite7, WildernessCampsite8, WildernessCampsite9, WildernessCampsite10, 
+WildernessCampsite11, WildernessCampsite12, WildernessCampsite13, WildernessCampsite14,
+
+]);
 
 var poi = L.layerGroup([pointofinterestPineRide1icon, pointofinterestPineRide2icon]);
 
