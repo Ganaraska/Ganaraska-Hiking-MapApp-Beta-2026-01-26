@@ -798,7 +798,16 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
     var pointofinterestWilderness3icon = L.icon({iconUrl: 'info-svgrepo-com.svg', iconSize: [25, 25]});
          L.marker([44.832622, -79.059423],{icon:pointofinterestWilderness3icon}).addTo(map).bindPopup("Victoria Falls");    
          
-         
+    var pointofinterestWilderness4icon = L.icon({iconUrl: 'info-svgrepo-com.svg', iconSize: [25, 25]});
+         L.marker([44.876453, -78.86804],{icon:pointofinterestWilderness4icon}).addTo(map).bindPopup("Anson Mountain");    
+
+
+    var pointofinterestWilderness5icon = L.icon({iconUrl: 'info-svgrepo-com.svg', iconSize: [25, 25]});
+         L.marker([44.828937, -78.855426],{icon:pointofinterestWilderness5icon}).addTo(map).bindPopup("Scrabble Mountain"); 
+
+
+
+
 
 
 
@@ -827,11 +836,39 @@ circleOroMedonteStart.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-
         var WildernessCampsite12 = L.marker([44.843387, -78.971435]).bindPopup('Campsite 12')//.addTo(map);
         var WildernessCampsite13 = L.marker([44.841751, -78.961852]).bindPopup('Campsite 13')//.addTo(map);
         var WildernessCampsite14 = L.marker([44.854043, -78.945019]).bindPopup('Campsite 14')//.addTo(map);
+        var WildernessCampsite15 = L.marker([44.859603, -78.950523]).bindPopup('Campsite 15')//.addTo(map);
+        var WildernessCampsite16 = L.marker([44.856522, -78.931922]).bindPopup('Campsite 16')//.addTo(map);
+        var WildernessCampsite17 = L.marker([44.859105, -78.921663]).bindPopup('Campsite 17')//.addTo(map);
+        var WildernessCampsite18 = L.marker([44.858599, -78.917622]).bindPopup('Campsite 18')//.addTo(map);
+        var WildernessCampsite19 = L.marker([44.859367, -78.906368]).bindPopup('Campsite 19')//.addTo(map);
+        var WildernessCampsite20 = L.marker([44.859983, -78.901064]).bindPopup('Campsite 20')//.addTo(map);
+        var WildernessCampsite21 = L.marker([44.86047, -78.893266]).bindPopup('Campsite 21')//.addTo(map);
+
+        var WildernessCampsite25 = L.marker([44.859926, -78.868997]).bindPopup('Campsite 25')//.addTo(map);
+        var WildernessCampsite26 = L.marker([44.858029, -78.867634]).bindPopup('Campsite 26')//.addTo(map);
+        var WildernessCampsite27 = L.marker([44.860141, -78.85374]).bindPopup('Campsite 27')//.addTo(map);
+
+        var WildernessCampsite32 = L.marker([44.85748, -78.843706]).bindPopup('Campsite 32')//.addTo(map);
+        var WildernessCampsite33 = L.marker([44.85942, -78.848306]).bindPopup('Campsite 33')//.addTo(map);
+        var WildernessCampsite34 = L.marker([44.859749, -78.850578]).bindPopup('Campsite 34')//.addTo(map);
+
+        var WildernessCampsite40 = L.marker([44.844241, -78.825633]).bindPopup('Campsite 40')//.addTo(map);
+        var WildernessCampsite41 = L.marker([44.842664, -78.827195]).bindPopup('Campsite 41')//.addTo(map);
+        var WildernessCampsite42 = L.marker([44.837247, -78.825832]).bindPopup('Campsite 42')//.addTo(map);
+        var WildernessCampsite43 = L.marker([44.842744, -78.862192]).bindPopup('Campsite 43')//.addTo(map);
+
+        var WildernessCampsite87 = L.marker([44.8597, -78.86639]).bindPopup('Campsite 87')//.addTo(map);
+
+
 
 
 var Campsites = L.layerGroup([WildernessCampsite1, WildernessCampsite2, WildernessCampsite3, WildernessCampsite4, 
 WildernessCampsite5, WildernessCampsite6, WildernessCampsite7, WildernessCampsite8, WildernessCampsite9, WildernessCampsite10, 
-WildernessCampsite11, WildernessCampsite12, WildernessCampsite13, WildernessCampsite14,
+WildernessCampsite11, WildernessCampsite12, WildernessCampsite13, WildernessCampsite14, WildernessCampsite15, WildernessCampsite16,
+WildernessCampsite17, WildernessCampsite18, WildernessCampsite19, WildernessCampsite20, WildernessCampsite21, WildernessCampsite25,
+WildernessCampsite26, WildernessCampsite27, WildernessCampsite32, WildernessCampsite33, WildernessCampsite34, WildernessCampsite40,
+WildernessCampsite41, WildernessCampsite42, WildernessCampsite43, WildernessCampsite87, 
+
 
 ]);
 
@@ -845,8 +882,8 @@ var baseMaps = {
     "OSM Cycle/Hiking (TCT & Contours)": CycleOSM,
     "OpenStreetMap (Humanitarian)": osm_HOT,
     "OpenTopoMap (Contours)": otm,
-    //"Stadia Imagery": Stadia_AlidadeSatellite,
     "ESRI World Imagery": Esri_WorldImagery,
+    //"Stadia Imagery": Stadia_AlidadeSatellite, // Need an API Key. Boo...
 };
 
 //L.control.layers(baseMaps).addTo(map); // Original code - Use this commad IF only the map STYLES are listed without any other layers!!
@@ -2861,7 +2898,8 @@ var latlngs = [
     [44.7567740, -79.1553190],
 ];
 
-var polyline = L.polyline(latlngs, {color: 'steelblue', weight: 6}).addTo(map);
+//var polyline = L.polyline(latlngs, {color: 'steelblue', weight: 6}).addTo(map);
+var polyline = L.polyline(latlngs, {color: 'orchid', weight: 6}).addTo(map);
 // polyline.bindPopup("<b>Wilderness Main Trail</b><br>");
 
     polyline.bindPopup('<a href="https://www.facebook.com/GHTAwilderness/" target="_blank">www.facebook.com/GHTAwilderness</a><p><b>Wilderness Main Trail</b> (55 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
@@ -6962,25 +7000,6 @@ var latlngs = [
     [44.5727700, -79.9783200],
     [44.5724600, -79.9793400],
     [44.5716100, -79.9808100],
-    [44.5714800, -79.9812100],
-    [44.5717400, -79.9814300],
-    [44.5717500, -79.9820600],
-    [44.5711200, -79.9827100],
-    [44.5710600, -79.9830300],
-    [44.5705600, -79.9830800],
-    [44.5704500, -79.9832600],
-    [44.5706100, -79.9832200],
-    [44.5706000, -79.9833900],
-    [44.5704100, -79.9834100],
-    [44.5698100, -79.9848200],
-    [44.5695300, -79.9861300],
-    [44.5700200, -79.9869900],
-    [44.5697200, -79.9869900],
-    [44.5695300, -79.9875600],
-    [44.5692000, -79.9870400],
-    [44.5688100, -79.9868400],
-    [44.5686900, -79.9871500],
-    [44.5687800, -79.9876500],
     [44.5680800, -79.9892100],
     [44.5672300, -79.9905900],
     [44.5668300, -79.9908400],
