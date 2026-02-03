@@ -869,7 +869,6 @@ WildernessCampsite17, WildernessCampsite18, WildernessCampsite19, WildernessCamp
 WildernessCampsite26, WildernessCampsite27, WildernessCampsite32, WildernessCampsite33, WildernessCampsite34, WildernessCampsite40,
 WildernessCampsite41, WildernessCampsite42, WildernessCampsite43, WildernessCampsite87, 
 
-
 ]);
 
 var poi = L.layerGroup([pointofinterestPineRide1icon, pointofinterestPineRide2icon]);
@@ -900,10 +899,12 @@ var overlayMarkers = {
     //"Points of Interest": poi,
 
 //};
-    
-var layerControl = L.control.layers(baseMaps, overlayMarkers).addTo(map); // To add all map styles and layers to LEGEND
 
+// VERY IMPORTANT!! *****************************************************
 
+var layerControl = L.control.layers(baseMaps, overlayMarkers).addTo(map); // **To add all map styles and layers to LEGEND
+
+//***********************************************************************
 
 
          // BELOW IS THE GANARASKA HIKING TRAIL NETWORK IN DECIMAL DEGREES FOR EACH VERTEX (GPX POINT). 
@@ -1278,7 +1279,8 @@ var layerControl = L.control.layers(baseMaps, overlayMarkers).addTo(map); // To 
 
 var polyline = L.polyline(latlngs, {color: 'tomato', weight: 6}).addTo(map);
 //polyline.bindPopup("<b>Pine Ridge Trail</b><br>");
-polyline.bindPopup('<a href="https://www.pineridgehikingclub.ca//" target="_blank">www.pineridgehikingclub.ca</a><p><b>Pine Ridge Main Trail</b> (65 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+//polyline.bindPopup('<a href="https://www.pineridgehikingclub.ca//" target="_blank">www.pineridgehikingclub.ca</a><p><b>Pine Ridge Main Trail</b> (65 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2022/03/Trail-Guide-Description-Pine-Ridge-20210913.docx.pdf" target="_blank">PINE RIDGE TRAIL GUIDE</a><p><b>Pine Ridge Main Trail</b> (65 kms)<p><a href="https://www.pineridgehikingclub.ca//" target="_blank">www.pineridgehikingclub.ca</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 
@@ -1821,9 +1823,10 @@ var polygon = L.polygon(KawarthaSomerville, {
 ];
 
 var polyline = L.polyline(latlngs, {color: 'green', weight: 6}).addTo(map);
-polyline.bindPopup('<a href="https://www.facebook.com/kawarthahikingclub" target="_blank">www.facebook.com/kawarthahikingclub</a><p><b>Kawartha Main Trail</b> (75 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+// ORIGINAL--> polyline.bindPopup('<a href="https://www.facebook.com/kawarthahikingclub" target="_blank">www.facebook.com/kawarthahikingclub</a><p><b>Kawartha Main Trail</b> (75 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2025/12/Trail-Guide-Description-Kawartha-20220627.pdf" target="_blank">KAWARTHA TRAIL GUIDE</a><p><b>Kawartha Main Trail</b> (75 kms)<p><a href="https://www.facebook.com/kawarthahikingclub" target="_blank">www.facebook.com/kawarthahikingclub</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
-    //polyline.bindPopup('<a href="https://www.facebook.com/GHTAOrillia/" target="_blank">www.facebook.com/GHTAOrillia</a><p><b>Orillia Main Trail</b><p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    //??--> polyline.bindPopup('<a href="https://www.facebook.com/GHTAOrillia/" target="_blank">www.facebook.com/GHTAOrillia</a><p><b>Orillia Main Trail</b><p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 var circledotKawarthStart = L.circle([44.2919050, -78.6308860], { 
@@ -2902,7 +2905,8 @@ var latlngs = [
 var polyline = L.polyline(latlngs, {color: 'orchid', weight: 6}).addTo(map);
 // polyline.bindPopup("<b>Wilderness Main Trail</b><br>");
 
-    polyline.bindPopup('<a href="https://www.facebook.com/GHTAwilderness/" target="_blank">www.facebook.com/GHTAwilderness</a><p><b>Wilderness Main Trail</b> (55 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    // ORIGINAL--> polyline.bindPopup('<a href="https://www.facebook.com/GHTAwilderness/" target="_blank">www.facebook.com/GHTAwilderness</a><p><b>Wilderness Main Trail</b> (55 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2025/03/Wilderness-Trail-Guide-Description-20250322.pdf" target="_blank">WILDERNESS TRAIL GUIDE</a><p><b>Wilderness Main Trail</b> (55 kms)<p><a href="https://www.facebook.com/GHTAwilderness/" target="_blank">www.facebook.com/GHTAwilderness</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 var circledotWildernessStart = L.circle([44.8068830, -78.8132760], { 
@@ -3436,7 +3440,9 @@ var circledotWildernessStart = L.circle([44.8068830, -78.8132760], {
                 ];
 
                 var polyline = L.polyline(latlngs, {color: 'tomato', weight: 4}).addTo(map);
-                polyline.bindPopup("<b>Wilderness Side Trail</b><br>Sheldon Lake Day Use<br>");
+                //ORIGINAL--> polyline.bindPopup("<b>Wilderness Side Trail</b><br>Sheldon Lake Day Use<br>");
+                polyline.bindPopup('<b>Wilderness Side Trail</b><br>Sheldon Lake Day Use<br><a href="https://www.facebook.com/photo/?fbid=1157919913105355&set=pcb.1157920996438580" target="_blank">Autumn Photo</a>');
+                //polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2025/03/Wilderness-Trail-Guide-Description-20250322.pdf" target="_blank">WILDERNESS TRAIL GUIDE</a><p><b>Wilderness Main Trail</b> (55 kms)<p><a href="https://www.facebook.com/GHTAwilderness/" target="_blank">www.facebook.com/GHTAwilderness</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
                     // WILDERNESS OTTER LAKE SIDE TRAIL
@@ -4753,7 +4759,8 @@ var latlngs = [
 
 var Orilliapolyline = L.polyline(latlngs, {color: 'orange', weight: 6}).addTo(map);
 //Orilliapolyline.bindPopup("<b>Orillia Main Trail</b><p>"); //This is the original popup. (Original)
-    Orilliapolyline.bindPopup('<a href="https://www.facebook.com/GHTAOrillia/" target="_blank">www.facebook.com/GHTAOrillia</a><p><b>Orillia Main Trail</b> (68 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    //ORIGINAL--> Orilliapolyline.bindPopup('<a href="https://www.facebook.com/GHTAOrillia/" target="_blank">www.facebook.com/GHTAOrillia</a><p><b>Orillia Main Trail</b> (68 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    Orilliapolyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2025/11/Orillia-Trail-Guide-Description-20251123.pdf" target="_blank">ORILLIA TRAIL GUIDE</a><p><b>Orillia Main Trail</b> (68 kms)<p><a href="https://www.facebook.com/GHTAOrillia/" target="_blank">www.facebook.com/GHTAOrillia</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 var circledotWildernessStart = L.circle([44.756539, -79.15518], { 
@@ -5726,7 +5733,8 @@ var polygon = L.polygon(Millercoords, {
         // Interesting that I can call this one "Barriepolyline" and all the others are just "polyline" and it all works. Hmm...
     var Barriepolyline = L.polyline(latlngs, {color: 'purple', weight: 6}).addTo(map);
         //Barriepolyline.bindPopup("<b>Barrie Main Trail</b><br>"); (Original)
-        Barriepolyline.bindPopup('<a href="https://www.facebook.com/GHTAbarrie" target="_blank">www.facebook.com/GHTABarrie</a><p><b>Barrie Main Trail</b> (50 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+        //ORIGINAL--> Barriepolyline.bindPopup('<a href="https://www.facebook.com/GHTAbarrie" target="_blank">www.facebook.com/GHTABarrie</a><p><b>Barrie Main Trail</b> (50 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+        Barriepolyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2023/11/Trail-Guide-Description-Barrie-20231026.pdf" target="_blank">BARRIE TRAIL GUIDE</a><p><b>Barrie Main Trail</b> (50 kms)<p><a href="https://www.facebook.com/GHTAbarrie" target="_blank">www.facebook.com/GHTABarrie</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 var circledotBarrieStart = L.circle([44.5553241,-79.6189653], { 
@@ -6591,7 +6599,8 @@ var latlngs = [
 
 var polyline = L.polyline(latlngs, {color: 'mediumseagreen', weight: 6}).addTo(map);
 // polyline.bindPopup("<b>Mad River Main Trail</b><br>"); (Original)
-polyline.bindPopup('<a href="https://www.facebook.com/mrht18" target="_blank">www.facebook.com/mrht18</a><p><b>Mad River Main Trail</b> (50 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+//ORIGINAL--> polyline.bindPopup('<a href="https://www.facebook.com/mrht18" target="_blank">www.facebook.com/mrht18</a><p><b>Mad River Main Trail</b> (50 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2024/09/Mad-River-Trail-Guide-Description-20240903.pdf" target="_blank">MAD RIVER TRAIL GUIDE</a><p><b>Mad River Main Trail</b> (50 kms)<p><a href="https://www.facebook.com/mrht18" target="_blank">www.facebook.com/mrht18</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 var circledotMadRiverStart = L.circle([44.3402840, -79.8428310], { 
@@ -6931,10 +6940,11 @@ var latlngs = [
 ];
 
 var polyline = L.polyline(latlngs, {color: 'mediumvioletred', weight: 6}).addTo(map);
-// polyline.bindPopup("<b>Wasaga Beach Main Trail</b><br>"); (Orilinal)
-// polyline.bindPopup('<a href="https://www.instagram.com/hiking_the_ganaraska_ontario" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario</a><p><b>Wasaga Beach Main Trail</b>');
+// ?? polyline.bindPopup("<b>Wasaga Beach Main Trail</b><br>"); (Orilinal)
+// ?? polyline.bindPopup('<a href="https://www.instagram.com/hiking_the_ganaraska_ontario" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario</a><p><b>Wasaga Beach Main Trail</b>');
 // polyline.bindPopup('<a href="https://www.facebook.com/mrht18" target="_blank">www.facebook.com/mrht18</a><p><b>Mad River Main Trail</b><p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
-polyline.bindPopup('<a href="https://www.facebook.com/groups/ganaraskahikingtrailgroup" target="_blank">www.facebook.com/groups/ganaraskahikingtrailgroup</a><p><b>Wasaga Beach Main Trail</b> (48 kms)');
+//ORIGINAL--> polyline.bindPopup('<a href="https://www.facebook.com/groups/ganaraskahikingtrailgroup" target="_blank">www.facebook.com/groups/ganaraskahikingtrailgroup</a><p><b>Wasaga Beach Main Trail</b> (48 kms)');
+polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2022/03/Trail-Guide-Description-Wasaga-Beach-20210613.docx.pdf" target="_blank">WASAGA BEACH TRAIL GUIDE</a><p><b>Wasaga Beach Main Trail</b> (48 kms)<p><a href="https://www.facebook.com/groups/ganaraskahikingtrailgroup" target="_blank">www.facebook.com/groups/ganaraskahikingtrailgroup</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 // TINY MAIN TRAIL
@@ -7010,7 +7020,8 @@ var latlngs = [
 
 var polyline = L.polyline(latlngs, {color: 'teal', weight: 6}).addTo(map);
 // polyline.bindPopup("<b>Tiny Main Trail</b><br>"); // (Original)
-polyline.bindPopup('<a href="https://www.facebook.com/groups/ganaraskahikingtrailgroup" target="_blank">www.facebook.com/groups/ganaraskahikingtrailgroup</a><p><b>Tiny Main Trail</b> (50 kms)');
+//ORIGINAL--> polyline.bindPopup('<a href="https://www.facebook.com/groups/ganaraskahikingtrailgroup" target="_blank">www.facebook.com/groups/ganaraskahikingtrailgroup</a><p><b>Tiny Main Trail</b> (50 kms)');
+polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2024/05/Trail-Guide-Description-Tiny-20240228.pdf" target="_blank">TINY TRAIL GUIDE</a><p><b>Tiny Main Trail</b> (50 kms)<p><a href="https://www.facebook.com/groups/ganaraskahikingtrailgroup" target="_blank">www.facebook.com/groups/ganaraskahikingtrailgroup</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 // Put this here so dot covers Tiny trail end. Thumbs up! :)
@@ -7446,7 +7457,8 @@ var latlngs = [
 
 var polyline = L.polyline(latlngs, {color: 'darkorange', weight: 6}).addTo(map);
 // polyline.bindPopup("<b>Midland Main Trail</b><br>"); // (Original)
-    polyline.bindPopup('<a href="https://www.facebook.com/GHTAMidland" target="_blank">www.facebook.com/GHTAMidland</a><p><b>Midland Main Trail</b> (28 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    //ORIGINAL--> polyline.bindPopup('<a href="https://www.facebook.com/GHTAMidland" target="_blank">www.facebook.com/GHTAMidland</a><p><b>Midland Main Trail</b> (28 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2025/04/Midland-Trail-Guide-Description-20250418-2.pdf" target="_blank">MIDLAND TRAIL GUIDE</a><p><b>Midland Main Trail</b> (28 kms)<p><a href="https://www.facebook.com/GHTAMidland" target="_blank">www.facebook.com/GHTAMidland</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 
@@ -7732,7 +7744,8 @@ var latlngs = [
 
 var polyline = L.polyline(latlngs, {color: 'deepskyblue', weight: 6}).addTo(map);
 // polyline.bindPopup("<b>Oro-Medonte Main Trail</b><br>"); // (Original)
-    polyline.bindPopup('<a href="https://www.facebook.com/GHTAOroMedonte" target="_blank">www.facebook.com/GHTAOroMedonte</a><p><b>Oro-Medonte Main Trail</b> (18 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    //ORIGINAL--> polyline.bindPopup('<a href="https://www.facebook.com/GHTAOroMedonte" target="_blank">www.facebook.com/GHTAOroMedonte</a><p><b>Oro-Medonte Main Trail</b> (18 kms)<p><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
+    polyline.bindPopup('<a href="https://ganaraska-hiking-trail.org/wp-content/uploads/2024/10/Oro-Medonte-Trail-Guide-Description-20241018.pdf" target="_blank">ORO-MEDONTE TRAIL GUIDE</a><p><b>Oro-Medonte Main Trail</b> (18 kms)<p><a href="https://www.facebook.com/GHTAOroMedonte" target="_blank">www.facebook.com/GHTAOroMedonte</a><br><a href="https://www.instagram.com/hiking_the_ganaraska_ontario/" target="_blank">www.instagram.com/hiking_the_ganaraska_ontario');
 
 
 
@@ -9971,6 +9984,7 @@ polyline.bindPopup("<b>Bruce Trail</b> - Section connecting to <b>Mad River</b>"
     //}
         
 //}].addto(map);
+
 
 
 
